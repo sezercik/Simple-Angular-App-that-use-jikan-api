@@ -1,7 +1,9 @@
 import { Injectable } from '@angular/core';
 import {HttpClient} from '@angular/common/http';
 import { Observable } from 'rxjs';
-import { AnimeResponseModel } from '../models/animeResponseModel';
+import { ListResponseModel } from '../models/listResponseModel';
+import { Anime } from '../models/anime';
+import { ResponseModel } from '../models/responseModel';
 
 @Injectable({
   providedIn: 'root'
@@ -11,7 +13,14 @@ export class AnimeService {
 
   constructor(private httpclient:HttpClient) { }
 
-  getAnimes():Observable<AnimeResponseModel>{
-    return this.httpclient.get<AnimeResponseModel>(this.apiUrl);
+  getAnimes():Observable<ListResponseModel<Anime>>{
+    return this.httpclient.get<ListResponseModel<Anime>>(this.apiUrl);
+  }
+
+
+  getAnime(id:number):Observable<ResponseModel>{
+    const url = `${this.apiUrl}/${id}`;
+    console.log(url);
+    return this.httpclient.get<ResponseModel>(url).pipe();
   }
 }

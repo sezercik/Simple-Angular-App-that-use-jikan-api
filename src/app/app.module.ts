@@ -9,6 +9,8 @@ import { GenreComponent } from './components/genre/genre.component';
 import { AnimeComponent } from './components/anime/anime.component';
 import { MangaComponent } from './components/manga/manga.component';
 import { AnimeDetailComponent } from './components/anime-detail/anime-detail.component';
+import { DashboardComponent } from './components/dashboard/dashboard.component';
+import { GenredetailComponent } from './components/genredetail/genredetail.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +19,9 @@ import { AnimeDetailComponent } from './components/anime-detail/anime-detail.com
     GenreComponent,
     AnimeComponent,
     MangaComponent,
-    AnimeDetailComponent
+    AnimeDetailComponent,
+    DashboardComponent,
+    GenredetailComponent
   ],
   imports: [
     BrowserModule,

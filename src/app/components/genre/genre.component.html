@@ -1,1 +1,8 @@
-<p>genre works!</p>
+<!-- <div class="row p-lg-2 p-1"> -->
+<!-- <aside class="d-none d-lg-block col-lg-3"> -->
+  <nav  class="nav nav-pills flex-column flex-nowrap overflow-auto slider__nav">
+      <a routerLink="/genre/{{genre.mal_id}}" (click)="setCurrentGenre(genre)"  *ngFor="let genre of genres" class="nav-link"> {{genre.name}}</a>
+  </nav>
+  <h5 *ngIf="currentGenre">{{currentGenre.name}} seçtiniz</h5>
+<!-- </aside>
+</div> -->

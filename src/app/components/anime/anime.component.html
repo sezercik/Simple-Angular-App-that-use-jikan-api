@@ -1,9 +1,9 @@
 <div *ngIf="dataLoaded==false" class="spinner-border text-primary" role="status">
   <span class="visually-hidden">Loading...</span>
 </div>
-<div class="animes mt-3">
+<div class="animes">
  <div class="row">
-  <div class="col-md-4" *ngFor="let anime of animes">
+  <div class="col-md-6" *ngFor="let anime of animes">
     <div class="card mb-2" style="max-width: 540px;">
       <div class="row g-0">
         <div class="col-md-4">

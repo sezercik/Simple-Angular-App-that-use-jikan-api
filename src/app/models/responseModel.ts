@@ -1,3 +1,5 @@
-export interface ResponseModel{
+import { Anime } from "./anime";
 
+export interface ResponseModel{
+data:Anime
 }
