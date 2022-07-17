@@ -1,4 +1,9 @@
-# Mal
+# Anime and Manga
+Simple api usage for Angular
+
+-Genre not working
+-Manga not ready yet
+-Anime works
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.6.
 
