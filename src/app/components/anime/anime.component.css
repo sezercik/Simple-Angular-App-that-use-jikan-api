@@ -1,0 +1,19 @@
+.card-text {
+  display: -webkit-box;
+  max-width: 200px;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+/* width: 300px; */
+}
+a.card-title{
+  color: rgb(34, 34, 34);
+  font: bold 15px/18px Arial;
+  position: relative;
+  text-decoration: none;
+  width: 210px;
+  display: block;/* Change it as per your requirement. */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
