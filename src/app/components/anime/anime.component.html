@@ -3,7 +3,7 @@
 </div>
 <div class="animes  mt-3">
  <div class="row">
-  <div class="col-md-6" *ngFor="let anime of animes">
+  <div class="col-md-6" *ngFor="let anime of animes  | paginate: {id:'mal_id', itemsPerPage:count,currentPage:p,totalItems: maxCount}">
     <div class="card mb-2" style="max-width: 540px;">
       <div class="row g-0">
         <div class="col-md-4">
@@ -15,7 +15,7 @@
           <div class="card-body">
             <a class="card-title" routerLink="/anime/{{anime.mal_id}}">{{anime.title}}</a>
             <p class="card-text">{{anime.synopsis}}}}</p>
-            <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
           </div>
         </div>
       </div>
@@ -23,3 +23,13 @@
   </div>
  </div>
 </div>
+
+
+<pagination-controls
+  (pageChange)="handlePageChange($event)"
+></pagination-controls>
+<div  *ngFor="let anime of animes | paginate: {
+  itemsPerPage: count,
+  currentPage: p,
+  totalItems: maxCount
+}"></div>

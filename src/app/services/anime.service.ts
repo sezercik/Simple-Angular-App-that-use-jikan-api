@@ -17,6 +17,9 @@ export class AnimeService {
     return this.httpclient.get<ListResponseModel<Anime>>(this.apiUrl);
   }
 
+  getNextAnimes(apiNum:number):Observable<ListResponseModel<Anime>>{
+    return this.httpclient.get<ListResponseModel<Anime>>(this.apiUrl+"/"+apiNum+"/full");
+  }
 
   getAnime(id:number):Observable<ResponseModel>{
     const url = `${this.apiUrl}/${id}`;

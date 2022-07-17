@@ -11,6 +11,7 @@ import { MangaComponent } from './components/manga/manga.component';
 import { AnimeDetailComponent } from './components/anime-detail/anime-detail.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { GenredetailComponent } from './components/genredetail/genredetail.component';
+import { NgxPaginationModule } from 'ngx-pagination';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { GenredetailComponent } from './components/genredetail/genredetail.compo
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    NgxPaginationModule
   ],
   providers: [],
   bootstrap: [AppComponent]
