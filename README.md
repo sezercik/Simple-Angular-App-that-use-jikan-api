@@ -1,12 +1,15 @@
 # Anime and Manga
 Simple api usage for Angular
 
--Genre not working
--Manga not ready yet
--Anime works
+- Genre not working
+- Manga not ready yet
+- Anime works
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.6.
 
+## Images
+![Image 1](images/git-1.png)
+![Image 1](images/git-2.png)
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
